@@ -17,6 +17,7 @@ class WPecommerce_Admin_Bar {
 
 	}
 
+	//The Toolbar Instance
 	public static function init() {
 		static $instance = false;
 		if ( ! $instance ) {
@@ -81,9 +82,12 @@ class WPecommerce_Admin_Bar {
 }
 
 function load_wpecommerce_admin_bar() {
+	//Check if plugin is activated, or else...
+	if( is_plugin_active( 'wp-e-commerce/wp-shopping-cart.php' ) ) {
 
 		return WPecommerce_Admin_Bar::init();
 
+	}
 
 }
 add_action('plugins_loaded', 'load_wpecommerce_admin_bar');
