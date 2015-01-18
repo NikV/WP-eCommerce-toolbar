@@ -51,6 +51,14 @@ class WPecommerce_Admin_Bar {
 			);
 
 			$wp_admin_bar->add_node( array(
+					'parent' => 'wp_ecommerce_toolbar_products',
+					'id'    => 'wp_ecommerce_toolbar_products_new',
+					'title' => 'Add New',
+					'href' => admin_url('post-new.php?post_type=wpsc-product'),
+				)
+			);
+
+			$wp_admin_bar->add_node( array(
 					'parent' => 'wp_ecommerce_toolbar',
 					'id'    => 'wp_ecommerce_toolbar_coupons',
 					'title' => 'Coupons',
