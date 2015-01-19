@@ -67,6 +67,14 @@ class WPecommerce_Admin_Bar {
 			);
 
 			$wp_admin_bar->add_node( array(
+					'parent' => 'wp_ecommerce_toolbar_coupons',
+					'id'    => 'wp_ecommerce_toolbar_coupons_new',
+					'title' => 'Add New',
+					'href' => admin_url('edit.php?post_type=wpsc-product&page=wpsc-edit-coupons&wpsc-action=add_coupon'),
+				)
+			);
+
+			$wp_admin_bar->add_node( array(
 					'parent' => 'wp_ecommerce_toolbar',
 					'id'    => 'wp_ecommerce_toolbar_variations',
 					'title' => 'Variations',
