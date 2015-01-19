@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WP eCommerce Toolbar
- * Description:
+ * Description: A simple toolbar extension for users of The WPeCommerce plugin
  * Author: Nikhil Vimal
  * Author URI: http://nik.techvoltz.com
  * Version: 1.0
