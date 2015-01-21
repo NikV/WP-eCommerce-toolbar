@@ -99,6 +99,10 @@ class WPecommerce_Admin_Bar {
 
 function load_wpecommerce_admin_bar() {
 	//Check if plugin is activated, or else...
+	if( !function_exists( 'is_plugin_active' ) ) {
+		include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+	}
+
 	if( is_plugin_active( 'wp-e-commerce/wp-shopping-cart.php' ) ) {
 
 		return WPecommerce_Admin_Bar::init();
