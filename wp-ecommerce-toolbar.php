@@ -43,6 +43,14 @@ class WPecommerce_Admin_Bar {
 			);
 
 			$wp_admin_bar->add_node( array(
+					'parent' => 'wp-logo',
+					'id'    => 'wp_ecommerce_toolbar_about',
+					'title' => 'About WP eCommerce',
+					'href'  => 'https://wpecommerce.org/',
+				)
+			);
+
+			$wp_admin_bar->add_node( array(
 					'parent' => 'wp_ecommerce_toolbar',
 					'id'    => 'wp_ecommerce_toolbar_products',
 					'title' => 'Products',
