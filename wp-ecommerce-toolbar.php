@@ -102,20 +102,6 @@ class WPecommerce_Admin_Bar {
 
 	}
 
-
 }
 
-function load_wpecommerce_admin_bar() {
-	if( !function_exists( 'is_plugin_active' ) ) {
-		include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-	}
-
-	//Check if plugin is activated, or else...
-	if( is_plugin_active( 'wp-e-commerce/wp-shopping-cart.php' ) ) {
-
-		return WPecommerce_Admin_Bar::init();
-
-	}
-
-}
-add_action('plugins_loaded', 'load_wpecommerce_admin_bar');
+add_action( 'wpsc_init', 'WPecommerce_Admin_Bar::init' );
