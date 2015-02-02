@@ -11,9 +11,8 @@
 
 class WPecommerce_Admin_Bar {
 
-
 	public function __construct() {
-		add_action('admin_bar_menu', array( $this, 'admin_bar_nodes'),  999);
+		add_action( 'admin_bar_menu', array( $this, 'admin_bar_nodes' ), 999 );
 
 	}
 
@@ -32,8 +31,9 @@ class WPecommerce_Admin_Bar {
 	 * @param $wp_admin_bar The WordPress admin bar
 	 */
 	public function admin_bar_nodes( $wp_admin_bar ) {
+
 		//only displayed on site, not in admin
-		if ( ! is_admin()) {
+		if ( ! is_admin() ) {
 
 			// Main Parent Node
 			$wp_admin_bar->add_node( array(
