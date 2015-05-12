@@ -4,7 +4,7 @@
  * Description: A simple toolbar extension for users of The WP eCommerce plugin
  * Author: Nikhil Vimal
  * Author URI: http://nik.techvoltz.com
- * Version: 1.0
+ * Version: 1.1
  * Plugin URI: https://wordpress.org/plugins/wp-ecommerce-toolbar/
  * License: GNU GPLv2+
  */
